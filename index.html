@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>fast food</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="logo_prev_ui.png">
+            </div>
+            <div class="nav-links">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">food</a></li>
+                        <li><a href="#">disscount</a></li>
+                        <li><a href="contect.html" target="_blank" class="contact-button">Contact Us</a></li>
+                    </ul>
+             </div>
+        </nav>
+        <div class="info">
+            <div class="overlay"></div>
+            <img src="pngtree-young-boy-illustration-confused-png-image_4497093_prev_ui.png" class="you">
+            <div id="circle">
+                    <div class="feature one">
+                        <img src="fries_prev_ui.png">
+                        <div>
+                            <h1>fries</h1>
+                            <p>yummy fries</p>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="i_prev_ui.png">
+                        <div>
+                            <h1>pizza</h1>
+                            <p>testy pizza</p>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="sandwitch_prev_ui.png">
+                        <div>
+                            <h1>sandwitch</h1>
+                            <p>combo sandwitch</p>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="coko_prev_ui.png">
+                        <div>
+                            <h1>coko</h1>
+                            <p>make ur food more tasty</p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="controls">
+            <img src="arrow_prev_ui.png" id="up">
+            <h3>features</h3>
+            <img src="d.png" id="down">
+        </div>
+    </div>
+    <script>
+        var circle = document.getElementById("circle");
+        var up = document.getElementById("up");
+        var down = document.getElementById("down");
+    
+        var rotatevalue = 0; // Initialize with 0 degrees
+    
+        up.onclick = function() {
+            rotatevalue -= 90;
+            circle.style.transform = "rotate(" + rotatevalue + "deg)";
+        }
+    
+        down.onclick = function() {
+            rotatevalue += 90;
+            circle.style.transform = "rotate(" + rotatevalue + "deg)";
+        }
+    </script>
+    
+    
+</body>
+</html>
